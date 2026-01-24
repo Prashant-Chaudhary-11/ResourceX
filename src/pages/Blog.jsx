@@ -37,7 +37,7 @@ export const Blog = () => {
             {/* Cards */}
             <div className="row">
                 {blogs.map((blog, index) => (
-                    <div className="col-4" key={index}>
+                    <div className="col-12 col-md-4 mb-4" key={index}>
                         <div className="blog-card shadow-sm rounded-5 h-100">
                             
                             <img 

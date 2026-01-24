@@ -6,7 +6,7 @@ export const Cards = ({ title, description, link, image, description_small, inde
   const offset = moveUpCards ? Math.min(182, scrollY * 0.09) : 0;
 
   return (
-    <div className="col-3 welcome-cards">
+    <div className="col-md-3 col-12 welcome-cards">
       <div
         className="cards-page shadow rounded-5 m-3 d-flex flex-column justify-content-between"
         style={{

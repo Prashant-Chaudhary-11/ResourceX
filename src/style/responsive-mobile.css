@@ -1,0 +1,48 @@
+/* mobile media query */
+@media (max-width: 768px) {
+    .welcome-section, .blog-section, .hero-section{
+        padding: 50px 10px;
+    }
+    .main-heading{
+        font-size: 28px;
+    }
+    .sub-heading{
+        font-size: 14px;
+    }
+    .headings-section{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+    .hero-section .columns{
+        padding: 0;
+    }
+    .hero-section-heading{
+        font-size: 24px;
+    }
+    .collection-cards-wrapper h3{
+        font-size: 18px;
+    }
+    .collection-cards-wrapper{
+        width: 320px;
+    }
+    .impact-marquee{
+        overflow: hidden;
+        transform: rotate(0deg);
+    }
+    .footer-title-behind{
+        font-size: 40px;
+    }
+    .footer-title{
+        font-size: 24px;
+    }
+    .cards-page{
+        transform: none!important;
+    }
+
+  .card-0 { top: 50px; }
+  .card-1 { top: 330px; }
+  .card-2 { top: 660px; }
+
+
+}

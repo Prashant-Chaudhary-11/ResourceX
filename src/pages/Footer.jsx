@@ -21,7 +21,7 @@ export const Footer = () => {
 
             {/* Bottom Links */}
             <div className="row footer-links">
-                <div className="col-3">
+                <div className="col-md-3 col-6 mb-4">
                     <h5>Address</h5>
                     <p>
                         Remote-first <br />
@@ -30,7 +30,7 @@ export const Footer = () => {
                     </p>
                 </div>
 
-                <div className="col-3">
+                <div className="col-md-3 col-6 mb-4">
                     <h5>Links</h5>
                     <ul>
                         <li>Resources</li>
@@ -40,7 +40,7 @@ export const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="col-3">
+                <div className="col-md-3 col-6 mb-4">
                     <h5>Legal</h5>
                     <ul>
                         <li>Privacy policy</li>
@@ -49,7 +49,7 @@ export const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="col-3">
+                <div className="col-md-3 col-6 mb-4">
                     <h5>Contact</h5>
                     <p>
                         support@resourcex.com <br />

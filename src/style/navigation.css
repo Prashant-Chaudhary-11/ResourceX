@@ -92,3 +92,137 @@
   padding-left: 100px;
   padding-right: 100px;
 }
+/* keep your existing styles, add these */
+
+.header {
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+}
+
+/* Desktop defaults */
+.desktop-nav { display: flex; }
+.desktop-cta { display: inline-flex; }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--primary-color);
+  margin: 6px 0;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+/* Hamburger -> X */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Mobile Menu Container */
+.mobile-menu {
+  display: none; /* desktop hidden */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .desktop-nav { display: none; }
+  .desktop-cta { display: none; }
+
+  .hamburger { display: inline-flex; }
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .mobile-menu.open {
+    pointer-events: auto;
+  }
+
+  .mobile-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.35s ease;
+  }
+
+  .mobile-menu.open .mobile-backdrop {
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  /* Slide-down panel */
+  .mobile-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 16px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transform: translateY(-110%);
+    transition: transform 0.35s ease;
+  }
+
+  .mobile-menu.open .mobile-panel {
+    transform: translateY(0);
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 14px;
+  }
+
+  .mobile-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 8px;
+    border-radius: 10px;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+
+  .mobile-nav a:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--secondary-color);
+  }
+
+  .mobile-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

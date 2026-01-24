@@ -3,6 +3,7 @@ import './style/common.css'
 import './style/navigation.css'
 import './style/footer.css'
 import './style/home.css'
+import './style/responsive-mobile.css'
 
 import { Header } from './pages/Header'
 import { Footer } from './pages/Footer'
