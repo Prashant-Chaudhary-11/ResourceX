@@ -1,0 +1,7 @@
+export const Explosion = (explosion_clsss) => {
+    return (
+        <div className={explosion_clsss.explosion_clsss}>
+            <div className="explosion-animation-element explosion-animation-element--dark home-hero-heading__explosion home-hero-heading__explosion--1"><div className="explosion-animation-element__box"><div className="explosion-animation-element__line-outer"><div className="explosion-animation-element__line"></div></div><div className="explosion-animation-element__line-outer"><div className="explosion-animation-element__line"></div></div><div className="explosion-animation-element__line-outer"><div className="explosion-animation-element__line"></div></div><div className="explosion-animation-element__line-outer"><div className="explosion-animation-element__line"></div></div><div className="explosion-animation-element__line-outer"><div className="explosion-animation-element__line"></div></div><div className="explosion-animation-element__line-outer"><div className="explosion-animation-element__line"></div></div><div className="explosion-animation-element__line-outer"><div className="explosion-animation-element__line"></div></div><div className="explosion-animation-element__line-outer"><div className="explosion-animation-element__line"></div></div></div></div>
+        </div>
+    )
+}

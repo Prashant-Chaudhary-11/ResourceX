@@ -1,0 +1,331 @@
+.welcome-section{
+    padding: 150px 0;
+}
+.main-heading{
+    color: var(--primary-color);
+    font-size: 70px;
+}
+.sub-heading{
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.welcome-section {
+  position: relative;
+  padding: 100px;
+  overflow: hidden;
+}
+
+.text-center {
+  position: relative;
+  z-index: 2;
+}
+
+.main-heading {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.sub-heading {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.headings-section{
+  width: 70vw;
+  margin: auto;
+  margin-bottom: 70px;
+}
+/* --- Explosion / Tick Burst (like your image) --- */
+.home-hero-heading__explosions{
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  transform: translate(-50%, -50%);
+}
+.explosion-animation-element {
+  width: 90px;
+  height: 90px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.explosion-animation-element__box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* each tick holder rotates around center */
+.explosion-animation-element__line-outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-origin: center;
+}
+
+/* the tick itself (small rectangle like screenshot) */
+.explosion-animation-element__line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;          /* thickness */
+  height: 22px;        /* dash length */
+  background: #000;
+  border-radius: 2px;
+
+  /* start near center (inside) */
+  transform: translate(-50%, -55px) scaleY(0.2);
+  opacity: 0;
+
+  animation: tickBurst 10s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+/* rotate 8 ticks like your image */
+.explosion-animation-element__line-outer:nth-child(1) { transform: rotate(0deg); }
+.explosion-animation-element__line-outer:nth-child(2) { transform: rotate(45deg); }
+.explosion-animation-element__line-outer:nth-child(3) { transform: rotate(90deg); }
+.explosion-animation-element__line-outer:nth-child(4) { transform: rotate(135deg); }
+.explosion-animation-element__line-outer:nth-child(5) { transform: rotate(180deg); }
+.explosion-animation-element__line-outer:nth-child(6) { transform: rotate(225deg); }
+.explosion-animation-element__line-outer:nth-child(7) { transform: rotate(270deg); }
+.explosion-animation-element__line-outer:nth-child(8) { transform: rotate(315deg); }
+
+/* stagger like premium motion (optional but looks better) */
+.explosion-animation-element__line-outer:nth-child(2) .explosion-animation-element__line { animation-delay: .06s; }
+.explosion-animation-element__line-outer:nth-child(3) .explosion-animation-element__line { animation-delay: .12s; }
+.explosion-animation-element__line-outer:nth-child(4) .explosion-animation-element__line { animation-delay: .18s; }
+.explosion-animation-element__line-outer:nth-child(5) .explosion-animation-element__line { animation-delay: .24s; }
+.explosion-animation-element__line-outer:nth-child(6) .explosion-animation-element__line { animation-delay: .30s; }
+.explosion-animation-element__line-outer:nth-child(7) .explosion-animation-element__line { animation-delay: .36s; }
+.explosion-animation-element__line-outer:nth-child(8) .explosion-animation-element__line { animation-delay: .42s; }
+
+/* inside -> outside pulse */
+@keyframes tickBurst {
+  /* Hidden */
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -45px) scaleY(0.2);
+  }
+
+  /* Explosion starts */
+  5% {
+    opacity: 1;
+  }
+
+  /* Fully expanded */
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -70px) scaleY(1);
+  }
+
+  /* Fade out */
+  25% {
+    opacity: 0;
+    transform: translate(-50%, -75px) scaleY(1.05);
+  }
+
+  /* Stay hidden till next cycle */
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -75px) scaleY(0.2);
+  }
+}
+
+.cards-page{
+    padding: 30px;
+    background-color: white;
+    height: 30rem;
+}
+
+.cards-page:hover{
+    transition: 0.3s;
+    transform: scale(1.03);
+}
+
+/* first and third cards */
+.welcome-cards:nth-child(1) .cards-page,
+.welcome-cards:nth-child(3) .cards-page {
+    background-color: var(--tertiary-color);
+}
+
+/* second and forth cards */
+.welcome-cards:nth-child(2) .cards-page,
+.welcome-cards:nth-child(4) .cards-page {
+    background-color: var(--primary-lite-color);
+}
+
+/* SCROLL SECTION */
+.pixis-section {
+  height: 220vh;
+  background: #f5f3ec;
+}
+
+.pixis-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* BIG HEADING */
+.big-heading {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: clamp(70px, 14vw, 220px);
+  font-weight: 400;
+  white-space: nowrap;
+  transform: translate(40vw, -50%);
+  will-change: transform;
+  pointer-events: none;
+}
+
+/* CARDS */
+.cards-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.featured-cards {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0,0,0,.12);
+}
+
+/* initial positions like Pixis */
+.card-0 { left: 15%; top: 12%; }
+.card-1 { right: 12%; top: 32%; }
+.card-2 { left: 32%; bottom: 10%; }
+
+/* SHUTTER HOVER */
+.featured-layer {
+  position: absolute;
+  inset: 0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.6s cubic-bezier(.16,1,.3,1);
+}
+
+.featured-layer.front {
+  background: #e9e6dd;
+}
+
+.featured-layer.back {
+  background: #072929;
+  color: white;
+  transform: translateY(110%);
+}
+
+.featured-cards:hover .front {
+  transform: translateY(-110%);
+}
+
+.featured-cards:hover .back {
+  transform: translateY(0%);
+}
+
+.featured-icon {
+  width: 50px;
+  align-self: flex-end;
+}
+
+.featured-icon.back-icon {
+  filter: invert(1);
+}
+
+.featured-hover-heading {
+  line-height: 1.5;
+}
+.collection-moving-section{
+  display: flex;
+  transform: rotate(355deg);
+}
+
+.impact-marquee {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  transform: rotate(355deg);
+}
+
+.collection-moving-section {
+  display: flex;
+  animation: impactMarquee 22s linear infinite;
+  will-change: transform;
+}
+
+.impact-marquee:hover .collection-moving-section {
+  animation-play-state: paused;
+}
+
+@keyframes impactMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.card-collection-0{
+  background-color: white;
+}
+.card-collection-1{
+  background-color: #ac9d97;
+}
+.card-collection-2{
+  background-color: #f8b6b8;
+}
+.card-collection-3{
+  background-color: #e5ae56;
+  color: white;
+}
+.card-collection-4{
+  background-color: #bccae2;
+}
+.card-collection-5{
+  background-color: #6a88f1;
+}
+.card-collection-6{
+  background-color: #73a8ca;
+}
+.card-collection-7{
+  background-color: #ffc619;
+}
+.hero-section-heading{
+  font-size: 50px;
+}
+.blog-section, .hero-section{
+  padding: 100px;
+}
+.blog-card {
+  background: #ebeae1;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+.blog-tag {
+  background: #0f3d3e;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.blog-meta p {
+  font-size: 14px;
+  color: #666;
+}
