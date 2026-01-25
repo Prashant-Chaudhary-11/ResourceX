@@ -1,9 +1,10 @@
+import Hero_img from "/Hero.png";
 export const Hero = () => {
     return (
         <div className="hero-section">
             <div className="row mx-0">
                 <div className="col-md-6 columns col-12 p-4">
-                    <img src="/public/Hero.png" width="100%" alt="" />
+                    <img src={Hero_img} width="100%" alt="" />
                 </div>
                 <div className="col-md-6 columns col-12  p-4 d-flex flex-column justify-content-center">
                     <h1 className="hero-section-heading">Meet your all-in-one <br />resource hub for faster <br /> learning and better results</h1>
