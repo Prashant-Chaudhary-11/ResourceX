@@ -9,7 +9,7 @@ const cards_details = [
         description: "Using structured notes and revision cheat sheets.",
         description_small: "Better focus. Better results.",
         link: "/",
-        image: "../../public/cheat_sheet.jpg"
+        image: "/public/cheat_sheet.jpg"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const cards_details = [
         description: "Frontend and backend cheat sheets for coding.",
         description_small: "Less searching. More building.",
         link: "/",
-        image: "../../public/coder.png"
+        image: "/public/coder.png"
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ const cards_details = [
         description: "With ready-to-use resume templates.",
         description_small: "Career-ready in minutes.",
         link: "/",
-        image: "../../resume1.png"
+        image: "/resume1.png"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const cards_details = [
         description: "Curated learning paths for guided study.",
         description_small: "No more random learning.",
         link: "/",
-        image: "../../public/book_stack.png"
+        image: "/public/book_stack.png"
     },
     {
         id: 5,
@@ -41,7 +41,7 @@ const cards_details = [
         description: "Smart templates and planners for daily work.",
         description_small: "Work smarter, not longer.",
         link: "/",
-        image: "../../public/template.png"
+        image: "/public/template.png"
     },
     {
         id: 6,
@@ -49,7 +49,7 @@ const cards_details = [
         description: "Simple examples for faster understanding.",
         description_small: "Clarity in every topic.",
         link: "/",
-        image: "../../public/visual_guide.png",
+        image: "/public/visual_guide.png",
     },
     {
         id: 7,
@@ -57,7 +57,7 @@ const cards_details = [
         description: "Short notes built for last-minute revision.",
         description_small: "Quick recap, strong recall.",
         link: "/",
-        image: "../../public/clock.png",
+        image: "/public/clock.png",
     },
     {
         id: 8,
@@ -65,7 +65,7 @@ const cards_details = [
         description: "Practice sets and checklists to build habits.",
         description_small: "Small steps. Big progress.",
         link: "/",
-        image: "../../public/checklist.png",
+        image: "/public/checklist.png",
     },
 ];
 

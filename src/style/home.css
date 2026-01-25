@@ -138,7 +138,8 @@
 .cards-page{
     padding: 30px;
     background-color: white;
-    height: 30rem;
+    height: 25rem;
+    overflow: hidden;
 }
 
 .cards-page:hover{
@@ -149,19 +150,59 @@
 /* first and third cards */
 .welcome-cards:nth-child(1) .cards-page,
 .welcome-cards:nth-child(3) .cards-page {
-    background-color: var(--tertiary-color);
+  background-color: #e9e6dd;
+  /* color: white; */
 }
 
+.welcome-cards:nth-child(2) .cards-page h6,
+.welcome-cards:nth-child(2) .card-small-text,
+.welcome-cards:nth-child(4) .cards-page h6,
+.welcome-cards:nth-child(4) .card-small-text {
+  color: white;
+}
 /* second and forth cards */
 .welcome-cards:nth-child(2) .cards-page,
 .welcome-cards:nth-child(4) .cards-page {
-    background-color: var(--primary-lite-color);
+  background-color: var(--primary-color);
 }
 
+.card-home-tite{
+  /* transform: rotate(-90deg); */
+  font-size: 30px;
+  font-weight: 800;
+  /* text-wrap: nowrap; */
+  color: #b8b8b8ad;
+  text-transform: uppercase;
+}
+.cards-circle{
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #0e1a0542;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cards-badge{
+  background-color: white;
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
 /* SCROLL SECTION */
 .pixis-section {
   height: 220vh;
-  background: #f5f3ec;
+  /* background: #f5f3ec; */
 }
 
 .pixis-sticky {

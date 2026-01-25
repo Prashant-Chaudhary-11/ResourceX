@@ -6,7 +6,7 @@ export const Blog = () => {
             author: "Prashant Chaudhary",
             role: "Learning Designer",
             date: "16 January, 2026",
-            image: "../../public/blog_1.png"
+            image: "/public/blog_1.png"
         },
         {
             tag: "AI Learning",
@@ -14,7 +14,7 @@ export const Blog = () => {
             author: "Team YourBrand",
             role: "Product & Research",
             date: "15 January, 2026",
-            image: "../../public/blog_2.png"
+            image: "/public/blog_2.png"
         },
         {
             tag: "Career",
@@ -22,7 +22,7 @@ export const Blog = () => {
             author: "Career Team",
             role: "Career & Placement",
             date: "10 January, 2026",
-            image: "../../public/blog_3.png"
+            image: "/public/blog_3.png"
         }
     ];
 

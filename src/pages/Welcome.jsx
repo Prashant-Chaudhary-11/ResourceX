@@ -9,7 +9,7 @@ const cards_details = [
     description: "Quick-reference guides for fast revision across multiple subjects.",
     description_small: "Bite-sized learning aids",
     link: "/",
-    image: "/cheat_sheet.png",
+    image: "/img_1.png",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const cards_details = [
     description: "Ready-to-use templates for resumes, projects, and productivity.",
     description_small: "Enhance your productivity",
     link: "/",
-    image: "/resume.png",
+    image: "/resume_1.png",
   },
 ];
 
