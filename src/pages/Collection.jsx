@@ -1,4 +1,4 @@
-import { Explosion } from "./Explosion";
+// import { Explosion } from "./Explosion";
 import { Collectioncards } from "./Collection-cards";
 import cheat_sheet from "/cheat_sheet.jpg";
 import coder from "/coder.png";
@@ -83,7 +83,7 @@ export const Collection = () => {
                 <h1 className="main-heading mb-5">
                     Empowering smarter learning <br /> for everyone
                 </h1>
-                <Explosion explosion_clsss="home-hero-heading__explosions" />
+                {/* <Explosion explosion_clsss="home-hero-heading__explosions" /> */}
                 <p className="sub-heading">
                     Helping students and professionals achieve better results with curated resources.
                 </p>

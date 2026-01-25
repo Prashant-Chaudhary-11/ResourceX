@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Explosion } from "./Explosion";
+// import { Explosion } from "./Explosion";
 import { Cards } from "./Cards";
 import ShinyText from "./ShinyText";
 
@@ -69,7 +69,7 @@ export const Welcome = () => {
                     />
                 </h1>
 
-                <Explosion explosion_clsss="home-hero-heading__explosions" />
+                {/* <Explosion explosion_clsss="home-hero-heading__explosions" /> */}
 
                 <p className="sub-heading">
                     A curated library of cheat sheets, notes, and guides to help students and <br />
