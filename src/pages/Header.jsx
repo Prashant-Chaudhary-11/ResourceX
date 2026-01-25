@@ -87,8 +87,8 @@ export const Header = () => {
               <span className="brand-text">ResourceX</span>
             </div>
 
-            <button className="mobile-close" aria-label="Close menu" onClick={closeMenu}>
-              ✕
+            <button className="mobile-close p-0" aria-label="Close menu" onClick={closeMenu}>
+              <img width="24" height="24" src="https://img.icons8.com/ios/50/delete-sign--v1.png" alt="delete-sign--v1"/>
             </button>
           </div>
 
@@ -96,7 +96,7 @@ export const Header = () => {
           <div className="mobile-sheet-body">
             <button className="mobile-acc" onClick={() => toggleSection("products")}>
               <span>Products</span>
-              <span className={`chev ${openSection === "products" ? "up" : ""}`}>⌄</span>
+              <span className={`chev ${openSection === "products" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/></span>
             </button>
             <div className={`mobile-acc-panel ${openSection === "products" ? "open" : ""}`}>
               <Link to="/resources" onClick={closeMenu}>Study Notes</Link>
@@ -107,7 +107,7 @@ export const Header = () => {
 
             <button className="mobile-acc" onClick={() => toggleSection("platform")}>
               <span>Platform</span>
-              <span className={`chev ${openSection === "platform" ? "up" : ""}`}>⌄</span>
+              <span className={`chev ${openSection === "platform" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/></span>
             </button>
             <div className={`mobile-acc-panel ${openSection === "platform" ? "open" : ""}`}>
               <Link to="/about" onClick={closeMenu}>How it works</Link>
@@ -117,7 +117,7 @@ export const Header = () => {
 
             <button className="mobile-acc" onClick={() => toggleSection("resources")}>
               <span>Resources</span>
-              <span className={`chev ${openSection === "resources" ? "up" : ""}`}>⌄</span>
+              <span className={`chev ${openSection === "resources" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/></span>
             </button>
             <div className={`mobile-acc-panel ${openSection === "resources" ? "open" : ""}`}>
               <Link to="/blog" onClick={closeMenu}>Blog</Link>
