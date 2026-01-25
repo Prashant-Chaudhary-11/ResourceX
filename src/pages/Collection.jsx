@@ -89,7 +89,7 @@ export const Collection = () => {
                 </p>
             </div>
             <div className="impact-marquee">
-                <div className="mx-0 collection-moving-section">
+                <div className="mx-0 collection-moving-section row">
                     {cards_details.map((card, index) => (
                         <Collectioncards
                             key={card.id}

@@ -1,10 +1,10 @@
 /* mobile media query */
 @media (max-width: 768px) {
-    .welcome-section, .blog-section, .hero-section {
+    .welcome-section, .blog-section, .hero-section, .feature-section {
         padding: 50px 10px;
     }
 
-    .main-heading {
+    .main-heading span {
         font-size: 28px;
     }
 
@@ -34,7 +34,8 @@
     }
 
     .collection-cards-wrapper {
-        width: 250px;
+        /* width: 250px; */
+        height: 26rem;
     }
     .collection-card-image{
         height: 8rem;

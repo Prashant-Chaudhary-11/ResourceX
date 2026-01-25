@@ -35,7 +35,7 @@ export const Header = () => {
         <Link to="/blog" onClick={handleNavClick}>Blog</Link>
         <Link to="/about" onClick={handleNavClick}>About</Link>
       </nav>
-
+      
       <div className="header-actions d-flex align-items-center">
         <button className="primary-button d-flex align-items-center gap-1 desktop-cta">
           <img
@@ -49,7 +49,7 @@ export const Header = () => {
 
         {/* Mobile Hamburger */}
         <button
-          className={`hamburger p-0 d-flex align-items-center justify-content-center ${isOpen ? "open" : ""}`}
+          className={`hamburger p-0 d-none align-items-center justify-content-center ${isOpen ? "open" : ""}`}
           aria-label="Toggle menu"
           aria-expanded={isOpen}
           onClick={() => setIsOpen((p) => !p)}

@@ -1,4 +1,5 @@
 import Hero_img from "/Hero.png";
+
 export const Hero = () => {
     return (
         <div className="hero-section">

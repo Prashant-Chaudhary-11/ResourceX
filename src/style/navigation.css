@@ -76,22 +76,24 @@
   }
 }
 
-.header_navigation a{
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 10px;
-    transition: all 0.3s ease-in-out;
+.header_navigation a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
-.header_navigation a:hover{
-    color: var(--secondary-color);
+.header_navigation a:hover {
+  color: var(--secondary-color);
 }
-.header{
+
+.header {
   padding-left: 100px;
   padding-right: 100px;
 }
+
 /* keep your existing styles, add these */
 
 .header {
@@ -101,8 +103,13 @@
 }
 
 /* Desktop defaults */
-.desktop-nav { display: flex; }
-.desktop-cta { display: inline-flex; }
+.desktop-nav {
+  display: flex;
+}
+
+.desktop-cta {
+  display: inline-flex;
+}
 
 /* Hamburger */
 .hamburger {
@@ -129,9 +136,11 @@
 .hamburger.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
+
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
@@ -144,7 +153,8 @@
 
 /* Mobile Menu Container */
 .mobile-menu {
-  display: none; /* desktop hidden */
+  display: none;
+  /* desktop hidden */
 }
 
 /* Responsive */
@@ -154,10 +164,17 @@
     padding-right: 16px;
   }
 
-  .desktop-nav { display: none; }
-  .desktop-cta { display: none; }
+  .desktop-nav {
+    display: none;
+  }
 
-  .hamburger { display: inline-flex; }
+  .desktop-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-flex;
+  }
 
   .mobile-menu {
     display: block;
@@ -224,5 +241,20 @@
   .mobile-cta {
     width: 100%;
     justify-content: center;
+  }
+
+  .desktop-cta {
+    display: none !important;
+    /* hide Get Started */
+  }
+
+  .hamburger {
+    display: flex !important;
+    /* show 3-line menu */
+  }
+
+  .desktop-nav {
+    display: none !important;
+    /* optional: hide desktop nav on mobile */
   }
 }

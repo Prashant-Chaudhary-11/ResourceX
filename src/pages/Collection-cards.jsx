@@ -1,7 +1,7 @@
 export const Collectioncards = ({ title, description, link, image, description_small, index }) => {
     return (
-        <div className="col-md-3 col-4 welcome-cards p-0 collection-cards-wrapper">
-            <div className={`p-0 shadow rounded-5 m-3 d-flex flex-column justify-content-between card-collection-${index}`}>
+        <div className="col-md-3 col-6 welcome-cards p-2 mb-3 collection-cards-wrapper">
+            <div className={`p-0 shadow rounded-5 h-100 d-flex flex-column justify-content-between card-collection-${index}`}>
                 <div className="p-4">
                     <h3>{title}</h3>
                     <p>{description}</p>
