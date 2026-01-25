@@ -237,7 +237,7 @@
   height: 280px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0,0,0,.12);
+  /* box-shadow: 0 25px 60px rgba(0,0,0,.12); */
 }
 
 /* initial positions like Pixis */
@@ -290,7 +290,9 @@
   display: flex;
   transform: rotate(355deg);
 }
-
+.collection-card-image{
+        height: 12rem;
+    }
 .impact-marquee {
   position: relative;
   width: 100%;
@@ -369,4 +371,7 @@
 .blog-meta p {
   font-size: 14px;
   color: #666;
+}
+.blog-content{
+  padding: 0 15px 15px 15px;
 }

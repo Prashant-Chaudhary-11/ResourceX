@@ -1,3 +1,7 @@
+import Blog_1 from "/blog_1.png";
+import Blog_2 from "/blog_2.png";
+import Blog_3 from "/blog_3.png";
+
 export const Blog = () => {
     const blogs = [
         {
@@ -6,7 +10,7 @@ export const Blog = () => {
             author: "Prashant Chaudhary",
             role: "Learning Designer",
             date: "16 January, 2026",
-            image: "/public/blog_1.png"
+            image: Blog_1
         },
         {
             tag: "AI Learning",
@@ -14,7 +18,7 @@ export const Blog = () => {
             author: "Team YourBrand",
             role: "Product & Research",
             date: "15 January, 2026",
-            image: "/public/blog_2.png"
+            image: Blog_2
         },
         {
             tag: "Career",
@@ -22,7 +26,7 @@ export const Blog = () => {
             author: "Career Team",
             role: "Career & Placement",
             date: "10 January, 2026",
-            image: "/public/blog_3.png"
+            image: Blog_3
         }
     ];
 
@@ -37,7 +41,7 @@ export const Blog = () => {
             {/* Cards */}
             <div className="row">
                 {blogs.map((blog, index) => (
-                    <div className="col-12 col-md-4 mb-4" key={index}>
+                    <div className="col-6 col-md-4 mb-4" key={index}>
                         <div className="blog-card shadow-sm rounded-5 h-100">
                             
                             <img 
@@ -45,15 +49,15 @@ export const Blog = () => {
                                 alt={blog.title} 
                                 className="w-100 rounded-top-4 mb-3 blog-image"
                             />
-                            <div className="p-4">
+                            <div className="blog-content">
                                 <span className="blog-tag">{blog.tag}</span>
 
-                                <h3 className="mt-3">{blog.title}</h3>
+                                <h3 className="mt-3 blog-heading">{blog.title}</h3>
 
                                 <div className="blog-meta mt-3">
-                                    <strong>By {blog.author}</strong>
-                                    <p className="mb-3">{blog.role}</p>
-                                    <small>{blog.date}</small>
+                                    <strong className="blog-author">By {blog.author}</strong>
+                                    <p className="mb-3 blog-role">{blog.role}</p>
+                                    <small className="blog-date">{blog.date}</small>
                                 </div>
                             </div>
 

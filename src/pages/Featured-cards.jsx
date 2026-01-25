@@ -73,7 +73,7 @@ export const FeaturedCards = () => {
           {FeaturedCardsArray.map((card, index) => (
             <div
               key={index}
-              className={`featured-cards card-${index}`}
+              className={`featured-cards shadow-sm card-${index}`}
               ref={(el) => (cardRefs.current[index] = el)}
             >
               {/* FRONT */}
