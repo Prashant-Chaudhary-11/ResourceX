@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 let FeaturedCardsArray = [
   {
@@ -38,6 +40,8 @@ export const FeaturedCards = () => {
 
       /* Heading right -> left */
       const startX = 40;
+    
+    AOS.init();
       const endX = -140;
       const x = startX + (endX - startX) * t;
       headingRef.current.style.transform = `translate(${x}vw, -50%)`;

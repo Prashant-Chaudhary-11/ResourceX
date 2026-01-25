@@ -1,4 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { motion, useMotionValue, useAnimationFrame, useTransform } from 'motion/react';
 // import './ShinyText.css';
 
@@ -80,6 +82,7 @@ const ShinyText = ({
     directionRef.current = direction === 'left' ? 1 : -1;
     elapsedRef.current = 0;
     progress.set(0);
+    AOS.init();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [direction]);
 

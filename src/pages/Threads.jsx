@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Renderer, Program, Mesh, Triangle, Color } from 'ogl';
 
 const vertexShader = `
@@ -125,6 +127,7 @@ const Threads = ({ color = [1, 1, 1], amplitude = 1, distance = 0, enableMouseIn
   useEffect(() => {
     if (!containerRef.current) return;
     const container = containerRef.current;
+    AOS.init();
 
     const renderer = new Renderer({ alpha: true });
     const gl = renderer.gl;

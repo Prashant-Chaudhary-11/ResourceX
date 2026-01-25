@@ -41,7 +41,11 @@ export const Blog = () => {
             {/* Cards */}
             <div className="row">
                 {blogs.map((blog, index) => (
-                    <div className="col-6 col-md-4 mb-4" key={index}>
+                    <div className="col-6 col-md-4 mb-4" key={index}
+                        data-aos="fade-up"
+                        data-aos-delay={index * 120}
+                        data-aos-duration="800"
+                    >
                         <div className="blog-card shadow-sm rounded-5 h-100">
                             
                             <img 

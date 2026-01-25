@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
 
 export const Header = () => {
@@ -10,6 +12,7 @@ export const Header = () => {
       if (e.key === "Escape") setIsOpen(false);
     };
     window.addEventListener("keydown", onKeyDown);
+    AOS.init();
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 

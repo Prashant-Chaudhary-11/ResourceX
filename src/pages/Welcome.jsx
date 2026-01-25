@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Explosion } from "./Explosion";
 import { Cards } from "./Cards";
 import ShinyText from "./ShinyText";
@@ -45,6 +47,7 @@ export const Welcome = () => {
         const onScroll = () => setScrollY(window.scrollY || 0);
         onScroll();
         window.addEventListener("scroll", onScroll, { passive: true });
+        AOS.init();
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
