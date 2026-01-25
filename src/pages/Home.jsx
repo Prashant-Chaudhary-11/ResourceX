@@ -8,6 +8,7 @@ import { Blog } from "./Blog";
 import ClickSpark from '../components/ClickSpark';
 import { useEffect } from 'react';
 
+
 export const Home = () => {
   useEffect(() => {
     AOS.init();
