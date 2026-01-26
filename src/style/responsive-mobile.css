@@ -1,6 +1,6 @@
 /* mobile media query */
 @media (max-width: 768px) {
-    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section, .about-container, .about-page {
+    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section, .about-container, .about-page, .contact-container {
         padding: 50px 10px!important;
     }
 
@@ -158,5 +158,11 @@
     }
     .about-muted{
         font-size: 12px!important;
+    }
+    .office-contact{
+        font-size: 20px!important;
+    }
+    .contact-info{
+        font-size: 15px!important;
     }
 }

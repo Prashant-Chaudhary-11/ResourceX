@@ -156,12 +156,6 @@ export const About = () => {
               <div className="about-cta-actions">
                 <Link className="about-btn primary me-3" to="/resources">
                   Get Started
-                  <img
-                    width="18"
-                    height="18"
-                    src="https://img.icons8.com/ios-glyphs/30/arrow.png"
-                    alt="arrow"
-                  />
                 </Link>
                 <Link className="about-btn ghost bg-white" to="/collections">
                   View Collections

@@ -80,8 +80,8 @@ export const Header = () => {
           </div>
         </div>
 
-        <Link to="/blog">Blog</Link>
         <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
 
 
@@ -166,7 +166,7 @@ export const Header = () => {
             <div className="mobile-links">
               <Link to="/" className="header-links" onClick={closeMenu}><span>Home</span></Link>
               <Link to="/about" className="header-links" onClick={closeMenu}><span>About</span></Link>
-              <Link to="/blog" className="header-links" onClick={closeMenu}><span>Contact</span></Link>
+              <Link to="/contact" className="header-links" onClick={closeMenu}><span>Contact</span></Link>
             </div>
 
             <div>
