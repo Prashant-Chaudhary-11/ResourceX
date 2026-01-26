@@ -69,13 +69,20 @@
 
 .footer-links ul {
   list-style: none;
+  text-decoration: none;
   padding: 0;
 }
 
 .footer-links li {
+  text-decoration: none;
   margin-bottom: 8px;
   color: var(--primary-light-color);
   cursor: pointer;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--primary-light-color);
 }
 
 .footer-links li:hover {

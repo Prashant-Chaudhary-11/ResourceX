@@ -1,4 +1,5 @@
 import Silk from "../components/Silk";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -42,19 +43,19 @@ export const Footer = () => {
           <div className="col-md-3 col-6 mb-4">
             <h5>Links</h5>
             <ul>
-              <li>Resources</li>
-              <li>Collections</li>
-              <li>Templates</li>
-              <li>Blog</li>
+              <li><Link to="/resources">Resources</Link></li>
+              <li><Link to="/collections">Collections</Link></li>
+              <li><Link to="/templates">Templates</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
             </ul>
           </div>
 
           <div className="col-md-3 col-6 mb-4">
             <h5>Legal</h5>
             <ul>
-              <li>Privacy policy</li>
-              <li>Terms of use</li>
-              <li>Cookie policy</li>
+              <li><Link to="/privacy-policy">Privacy policy</Link></li>
+              <li><Link to="/terms-of-use">Terms of use</Link></li>
+              <li><Link to="/cookie-policy">Cookie policy</Link></li>
             </ul>
           </div>
 

@@ -1,6 +1,6 @@
 /* mobile media query */
 @media (max-width: 768px) {
-    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section, .about-container, .about-page, .contact-container {
+    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section, .about-container, .about-page, .contact-container, .legal-hero, .legal-body {
         padding: 50px 10px!important;
     }
 

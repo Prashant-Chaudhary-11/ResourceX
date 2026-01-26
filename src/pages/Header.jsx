@@ -62,14 +62,14 @@ export const Header = () => {
             Platform <span className="nav-dd-caret">▾</span>
           </button>
           <div className="nav-dd-menu">
-            <Link to="/about">How it works</Link>
-            <Link to="/about">Pricing</Link>
-            <Link to="/about">FAQ</Link>
+            {/* <Link to="/about">How it works</Link> */}
+            <Link to="/pricing">Pricing</Link>
+            <Link to="/faq">FAQ</Link>
           </div>
         </div>
 
         {/* Resources Dropdown */}
-        <div className="nav-dd">
+        {/* <div className="nav-dd">
           <button className="nav-dd-btn" type="button">
             Resources <span className="nav-dd-caret">▾</span>
           </button>
@@ -78,8 +78,9 @@ export const Header = () => {
             <Link to="/collections">Collections</Link>
             <Link to="/categories">Categories</Link>
           </div>
-        </div>
+        </div> */}
 
+        <Link to="/blog">Blog</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </nav>
@@ -147,24 +148,25 @@ export const Header = () => {
               <span className={`chev ${openSection === "platform" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1" /></span>
             </button>
             <div className={`mobile-acc-panel ${openSection === "platform" ? "open" : ""}`}>
-              <Link to="/about" onClick={closeMenu}>How it works</Link>
-              <Link to="/about" onClick={closeMenu}>Pricing</Link>
-              <Link to="/about" onClick={closeMenu}>FAQ</Link>
+              {/* <Link to="/about" onClick={closeMenu}>How it works</Link> */}
+              <Link to="/pricing" onClick={closeMenu}>Pricing</Link>
+              <Link to="/faq" onClick={closeMenu}>FAQ</Link>
             </div>
 
-            <button className="mobile-acc" onClick={() => toggleSection("resources")}>
+            {/* <button className="mobile-acc" onClick={() => toggleSection("resources")}>
               <span>Resources</span>
               <span className={`chev ${openSection === "resources" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1" /></span>
-            </button>
-            <div className={`mobile-acc-panel ${openSection === "resources" ? "open" : ""}`}>
+            </button> */}
+            {/* <div className={`mobile-acc-panel ${openSection === "resources" ? "open" : ""}`}>
               <Link to="/blog" onClick={closeMenu}>Blog</Link>
               <Link to="/collections" onClick={closeMenu}>Collections</Link>
               <Link to="/categories" onClick={closeMenu}>Categories</Link>
-            </div>
+            </div> */}
 
             {/* Normal links */}
             <div className="mobile-links">
               <Link to="/" className="header-links" onClick={closeMenu}><span>Home</span></Link>
+              <Link to="/blog" className="header-links" onClick={closeMenu}><span>Blog</span></Link>
               <Link to="/about" className="header-links" onClick={closeMenu}><span>About</span></Link>
               <Link to="/contact" className="header-links" onClick={closeMenu}><span>Contact</span></Link>
             </div>
