@@ -1,7 +1,7 @@
 /* mobile media query */
 @media (max-width: 768px) {
-    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section {
-        padding: 50px 10px;
+    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section, .about-container, .about-page {
+        padding: 50px 10px!important;
     }
 
     .main-heading span {
@@ -138,5 +138,25 @@
     .collection-subheading{
         font-size: 12px;
     }
-    
+    .about-hero{
+        padding: 0!important;
+    }
+    .about-team-img{
+        height: 250px!important;
+    }
+    .about-heading-main{
+        width: 100%!important;
+    }
+    .about-stat-value{
+        font-size: 30px!important;
+    }
+    .about-stat-label{
+        font-size: 15px!important
+    }
+    .about-h3{
+        font-size: 14px;
+    }
+    .about-muted{
+        font-size: 12px!important;
+    }
 }

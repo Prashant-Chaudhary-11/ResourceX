@@ -39,14 +39,51 @@ export const Header = () => {
       </h2>
 
       {/* Desktop Nav */}
+      {/* Desktop Nav */}
       <nav className="header_navigation desktop-nav">
         <Link to="/">Home</Link>
-        <Link to="/resources">Resources</Link>
-        <Link to="/categories">Categories</Link>
-        <Link to="/collections">Collections</Link>
+
+        {/* Products Dropdown */}
+        <div className="nav-dd">
+          <button className="nav-dd-btn" type="button">
+            Product <span className="nav-dd-caret">▾</span>
+          </button>
+          <div className="nav-dd-menu">
+            <Link to="/resources">Study Notes</Link>
+            <Link to="/resources">Cheat Sheets</Link>
+            <Link to="/collections">Collections</Link>
+            <Link to="/templates">Templates</Link>
+          </div>
+        </div>
+
+        {/* Platform Dropdown */}
+        <div className="nav-dd">
+          <button className="nav-dd-btn" type="button">
+            Platform <span className="nav-dd-caret">▾</span>
+          </button>
+          <div className="nav-dd-menu">
+            <Link to="/about">How it works</Link>
+            <Link to="/about">Pricing</Link>
+            <Link to="/about">FAQ</Link>
+          </div>
+        </div>
+
+        {/* Resources Dropdown */}
+        <div className="nav-dd">
+          <button className="nav-dd-btn" type="button">
+            Resources <span className="nav-dd-caret">▾</span>
+          </button>
+          <div className="nav-dd-menu">
+            <Link to="/blog">Blog</Link>
+            <Link to="/collections">Collections</Link>
+            <Link to="/categories">Categories</Link>
+          </div>
+        </div>
+
         <Link to="/blog">Blog</Link>
         <Link to="/about">About</Link>
       </nav>
+
 
       <div className="header-actions d-flex align-items-center">
         <button className="primary-button d-flex align-items-center gap-1 desktop-cta">

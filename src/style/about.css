@@ -1,0 +1,349 @@
+/* =========================
+   ABOUT PAGE (consistent UI)
+========================= */
+
+.about-page {
+  min-height: 100vh;
+  /* background: #fff; */
+}
+
+.about-page {
+padding: 20px 100px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.about-hero {
+  position: relative;
+  padding: 56px 0 34px;
+  /* background: rgba(255, 255, 255, 0.65); */
+}
+
+.about-team-img{
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+    border-radius: 18px;
+}
+.about-hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.about-title {
+  margin: 14px 0 10px;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.1;
+  color: rgba(0, 0, 0, 0.9);
+}
+.about-link{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+.about-grad {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.5));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-subtitle {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.68);
+  max-width: 520px;
+}
+
+.about-hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-btn {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.12s ease, background 0.12s ease, border 0.12s ease;
+}
+
+.about-btn.primary {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.about-btn.primary:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 0, 0, 0.84);
+}
+
+.about-btn.ghost {
+  color: rgba(0, 0, 0, 0.84);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.about-btn.ghost:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.about-stats {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.about-stat {
+  padding: 12px;
+  border-radius: 16px;
+  /* background: rgba(0, 0, 0, 0.03); */
+  /* border: 1px solid rgba(0, 0, 0, 0.06); */
+}
+
+.about-stat-value {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.about-stat-label {
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #989898cc
+}
+
+/* Right glass card */
+.about-hero-right {
+  position: relative;
+}
+
+.about-glass-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.12);
+}
+
+.about-glass-top {
+  height: 42px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.about-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.about-glass-body {
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.about-mini-card {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  align-items: center;
+}
+
+.about-mini-title {
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+}
+
+.about-mini-desc {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.about-note {
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: rgba(0, 0, 0, 0.72);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Orbs */
+.about-bg-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(30px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.orb-1 {
+  width: 180px;
+  height: 180px;
+  top: -40px;
+  right: -40px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.orb-2 {
+  width: 160px;
+  height: 160px;
+  bottom: -40px;
+  left: -40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.about-section-head {
+  margin-bottom: 18px;
+}
+
+.about-h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.about-p {
+  margin: 8px 0 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.about-card {
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.about-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.about-h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  /* color: rgba(0, 0, 0, 0.86); */
+}
+
+.about-card-icon{
+    background-color: #fece3f;
+}
+
+.about-muted {
+  color: gray;
+  font-weight: 500;
+}
+
+.about-card{
+    background-color: #fffcf3;
+}
+/* Steps */
+.about-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.about-step {
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 12px;
+}
+
+.about-step-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.88);
+  color: #fff;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-step-title {
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.86);
+}
+
+.about-step-desc {
+  margin-top: 6px;
+  color: rgba(0, 0, 0, 0.62);
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.about-cta-card {
+  padding: 70px 10px;
+  /* border-radius: 22px; */
+  background: #fece3f;
+  /* border: 1px solid rgba(0, 0, 0, 0.06); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .about-grid-3,
+  .about-steps {
+    grid-template-columns: 1fr;
+  }
+  .about-cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

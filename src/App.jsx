@@ -4,11 +4,12 @@ import './style/navigation.css'
 import './style/footer.css'
 import './style/home.css'
 import './style/responsive-mobile.css'
+import './style/about.css'
 
 import { Header } from './pages/Header'
 import { Footer } from './pages/Footer'
 import { Home } from './pages/Home'
-import { About } from './pages/About'
+import { About } from './pages/About-page'
 import { Contact } from './pages/Contact'
 import { Welcome } from './pages/Welcome'
 
