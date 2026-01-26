@@ -56,7 +56,7 @@ export const Welcome = () => {
             <div className="text-center position-relative headings-section">
                 <h1 className="main-heading mb-5">
                     <ShinyText
-                        text="Welcome to the Ultimate Hub for Learning Resources"
+                        text="Discover Smarter Ways to Learn"
                         speed={3.5}
                         delay={0}
                         color="#072929"
@@ -72,9 +72,10 @@ export const Welcome = () => {
                 {/* <Explosion explosion_clsss="home-hero-heading__explosions" /> */}
 
                 <p className="sub-heading">
-                    A curated library of cheat sheets, notes, and guides to help students and <br />
-                    professionals learn faster and work smarter.
-                </p>
+  Explore a growing ecosystem of learning resources, tools, and collections 
+  designed to support your study journey and skill development.
+</p>
+
             </div>
 
             <div className="row mx-0">

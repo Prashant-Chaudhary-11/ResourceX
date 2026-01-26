@@ -1,6 +1,6 @@
 /* mobile media query */
 @media (max-width: 768px) {
-    .welcome-section, .blog-section, .hero-section, .feature-section {
+    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section {
         padding: 50px 10px;
     }
 
@@ -26,16 +26,8 @@
         font-size: 24px;
     }
 
-    .collection-cards-wrapper h3 {
-        font-size: 15px;
-    }
-    .collection-cards-wrapper p {
-        font-size: 13px;
-    }
-
     .collection-cards-wrapper {
-        /* width: 250px; */
-        height: 23rem;
+        height: 21rem;
     }
     .collection-card-image{
         height: 8rem;
@@ -76,18 +68,6 @@
         font-size: 10px;
         padding: 4px 8px;
     }
-
-    .card-0 {
-        top: 50px;
-    }
-
-    .card-1 {
-        top: 260px;
-    }
-
-    .card-2 {
-        top: 520px;
-    }
     .featured-cards{
         width: 200px;
         height: 200px;
@@ -125,4 +105,38 @@
         padding: 8px 16px;
         font-size: 12px;
     }
+    .big-heading{
+        font-size: 25px;
+    }
+    .cards-layer{
+        width: calc(100% - 70px)
+    }
+    .panel-heading{
+        font-size: 14px;
+    }
+    .resources-panel{
+        padding: 10px;
+    }
+    .panel-subheading{
+        font-size: 10px;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+    .panel-divider-1{
+        padding-right: 20px!important;
+    }
+    .panel-divider-2{
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+    }
+    .panel-divider-3{
+        padding-left: 20px!important;
+    }
+    .collection-heading{
+        font-size: 14px;
+    }
+    .collection-subheading{
+        font-size: 12px;
+    }
+    
 }

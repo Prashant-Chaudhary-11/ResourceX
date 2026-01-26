@@ -160,3 +160,15 @@ body{
     @apply bg-background text-foreground;
     }
 }
+.width-500{
+    width: 500px;
+}
+.width-150{
+    width: 150px;
+}
+.height-50{
+    height: 50px;
+}
+.width-135{
+    width: 135px;
+}

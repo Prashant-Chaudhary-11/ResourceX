@@ -12,7 +12,7 @@
 }
 
 /* Force Particles to fill */
-.particles-bg > * {
+.particles-bg>* {
   width: 100%;
   height: 100%;
 }
@@ -29,7 +29,9 @@
   z-index: 1;
 }
 
-.particles-bg { opacity: 0.35; }
+.particles-bg {
+  opacity: 0.35;
+}
 
 
 .welcome-section {
@@ -41,9 +43,54 @@
   font-size: 70px;
 }
 
+.pre-main-heading span {
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
 .sub-heading {
   color: var(--primary-color);
   font-size: 16px;
+}
+
+.invert-img {
+  filter: invert(1);
+}
+
+.pre-home-section {
+  background-color: #fece3f;
+  padding: 20px 100px;
+}
+
+.pre-home-persons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: -15px;
+  border: 2px solid white;
+  position: absolute;
+  left: 10px
+}
+
+.pre-home-persons:nth-child(2) {
+  left: 40px
+}
+
+.pre-home-persons:nth-child(3) {
+  left: 70px
+}
+
+.user-count-pre {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.happy-heading {
+  font-size: 11px;
+  color: #555;
 }
 
 .welcome-section {
@@ -106,6 +153,33 @@
 
 .shiny-text {
   display: inline-block;
+}
+
+.resources-panel {
+  /* margin-top: 30px; */
+  /* background-color: #072929; */
+  /* color: white; */
+  padding: 20px 30px;
+  border-radius: 10px;
+  /* display: inline-block; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.panel-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.panel-subheading {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* the tick itself (small rectangle like screenshot) */
@@ -293,40 +367,13 @@
   margin-bottom: 10px;
 }
 
-/* SCROLL SECTION */
-.pixis-section {
-  height: 220vh;
-  /* background: #f5f3ec; */
-}
-
-.pixis-sticky {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* BIG HEADING */
-.big-heading {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  font-size: clamp(40px, 14vw, 220px);
-  font-weight: 400;
-  white-space: nowrap;
-  transform: translate(40vw, -50%);
-  will-change: transform;
-  pointer-events: none;
-}
-
-/* CARDS */
 .cards-layer {
-  position: absolute;
-  inset: 0;
+  width: 900px;
+  margin: 0 auto;
 }
 
 .featured-cards {
-  position: absolute;
+  position: relative;
   width: 280px;
   height: 280px;
   border-radius: 20px;
@@ -334,20 +381,30 @@
   /* box-shadow: 0 25px 60px rgba(0,0,0,.12); */
 }
 
-/* initial positions like Pixis */
-.card-0 {
-  left: 15%;
-  top: 12%;
+.big-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  text-wrap: nowrap;
+  text-align: center;
+  font-weight: 800;
+  color: #a9aca6;
+  text-transform: uppercase;
+  /* text-shadow: 0 0 10px rgba(0,0,0,.5); */
+  z-index: 0;
+  /* opacity: 0; */
 }
 
-.card-1 {
-  right: 12%;
-  top: 32%;
+.featured-cards.card-0 {
+  transform: rotate(-15deg);
 }
 
-.card-2 {
-  left: 32%;
-  bottom: 10%;
+.featured-cards.card-1 {
+  margin-left: auto;
+  transform: rotate(15deg);
+
 }
 
 /* SHUTTER HOVER */
@@ -408,64 +465,44 @@
   /* transform: rotate(355deg); */
 }
 
-.collection-moving-section {
-  /* display: flex; */
-  /* animation: impactMarquee 22s linear infinite; */
-  /* will-change: transform; */
-}
-
-.impact-marquee:hover .collection-moving-section {
-  /* animation-play-state: paused; */
-}
-
-/* @keyframes impactMarquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-} */
-
 .card-collection-0 {
   background-color: white;
 }
 
 .card-collection-1 {
-  background-color: #ac9d97;
+  background-color: #e5e5e5;
 }
 
 .card-collection-2 {
-  background-color: #f8b6b8;
+  background-color: #ffd7d8;
 }
 
 .card-collection-3 {
-  background-color: #e5ae56;
+  background-color: #ffe2b3;
   color: white;
 }
 
 .card-collection-4 {
-  background-color: #bccae2;
+  background-color: #d8e7ff;
 }
 
 .card-collection-5 {
-  background-color: #6a88f1;
+  background-color: #beccff;
 }
 
 .card-collection-6 {
-  background-color: #73a8ca;
+  background-color: #b7e3ff;
 }
 
 .card-collection-7 {
-  background-color: #ffc619;
+  background-color: #ffe9a6;
 }
 
 .hero-section-heading {
   font-size: 50px;
 }
 
-.blog-section, .hero-section, .feature-section {
+.blog-section, .hero-section, .feature-section, .pixis-section {
   padding: 100px;
 }
 

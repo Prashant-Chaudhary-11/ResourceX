@@ -88,7 +88,7 @@ export const Header = () => {
             </div>
 
             <button className="mobile-close p-0" aria-label="Close menu" onClick={closeMenu}>
-              <img width="24" height="24" src="https://img.icons8.com/ios/50/delete-sign--v1.png" alt="delete-sign--v1"/>
+              <img width="24" height="24" src="https://img.icons8.com/ios/50/delete-sign--v1.png" alt="delete-sign--v1" />
             </button>
           </div>
 
@@ -96,7 +96,7 @@ export const Header = () => {
           <div className="mobile-sheet-body">
             <button className="mobile-acc" onClick={() => toggleSection("products")}>
               <span>Products</span>
-              <span className={`chev ${openSection === "products" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/></span>
+              <span className={`chev ${openSection === "products" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1" /></span>
             </button>
             <div className={`mobile-acc-panel ${openSection === "products" ? "open" : ""}`}>
               <Link to="/resources" onClick={closeMenu}>Study Notes</Link>
@@ -107,7 +107,7 @@ export const Header = () => {
 
             <button className="mobile-acc" onClick={() => toggleSection("platform")}>
               <span>Platform</span>
-              <span className={`chev ${openSection === "platform" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/></span>
+              <span className={`chev ${openSection === "platform" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1" /></span>
             </button>
             <div className={`mobile-acc-panel ${openSection === "platform" ? "open" : ""}`}>
               <Link to="/about" onClick={closeMenu}>How it works</Link>
@@ -117,7 +117,7 @@ export const Header = () => {
 
             <button className="mobile-acc" onClick={() => toggleSection("resources")}>
               <span>Resources</span>
-              <span className={`chev ${openSection === "resources" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/></span>
+              <span className={`chev ${openSection === "resources" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1" /></span>
             </button>
             <div className={`mobile-acc-panel ${openSection === "resources" ? "open" : ""}`}>
               <Link to="/blog" onClick={closeMenu}>Blog</Link>
@@ -127,20 +127,99 @@ export const Header = () => {
 
             {/* Normal links */}
             <div className="mobile-links">
-              <Link to="/" onClick={closeMenu}>Home</Link>
-              <Link to="/about" onClick={closeMenu}>About</Link>
-              <Link to="/blog" onClick={closeMenu}>Contact</Link>
+              <Link to="/" className="header-links" onClick={closeMenu}><span>Home</span></Link>
+              <Link to="/about" className="header-links" onClick={closeMenu}><span>About</span></Link>
+              <Link to="/blog" className="header-links" onClick={closeMenu}><span>Contact</span></Link>
             </div>
 
-            <button className="primary-button mobile-cta" onClick={closeMenu}>
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/doodle/48/circled-play--v1.png"
-                alt="rocket"
-              />
-              Get Started
-            </button>
+            <div>
+              <button className="primary-button mobile-cta" onClick={closeMenu}>
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/doodle/48/circled-play--v1.png"
+                  alt="rocket"
+                />
+                Get Started
+              </button>
+            </div>
+
+            {/* Social icons (mobile only) */}
+            <div className="mobile-social">
+              <a
+                className="social-pill"
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/ios-glyphs/30/instagram-new.png"
+                  alt="instagram"
+                />
+              </a>
+
+              <a
+                className="social-pill"
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/ios-glyphs/30/linkedin.png"
+                  alt="linkedin"
+                />
+              </a>
+
+              <a
+                className="social-pill"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="X"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/ios-glyphs/30/twitterx.png"
+                  alt="x"
+                />
+              </a>
+
+              <a
+                className="social-pill"
+                href="https://youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/ios-glyphs/30/youtube-play.png"
+                  alt="youtube"
+                />
+              </a>
+
+              <a
+                className="social-pill"
+                href="mailto:hello@yourdomain.com"
+                aria-label="Email"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/ios-glyphs/30/new-post.png"
+                  alt="email"
+                />
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

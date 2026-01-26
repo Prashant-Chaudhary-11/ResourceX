@@ -5,6 +5,7 @@ import { FeaturedCards } from "./Featured-cards";
 import { Collection } from "./Collection";
 import { Hero } from "./Hero-section";
 import { Blog } from "./Blog";
+import { PreHome } from "./Pre-home";
 import ClickSpark from "../components/ClickSpark";
 import { useEffect } from "react";
 import Particles from "../components/Particles"; // adjust path if different
@@ -43,6 +44,7 @@ export const Home = () => {
           sparkCount={8}
           duration={400}
         >
+          <PreHome />
           <Welcome />
           <FeaturedCards />
           <Collection />

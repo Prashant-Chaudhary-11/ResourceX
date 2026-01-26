@@ -14,9 +14,6 @@ export const Cards = ({ title, description, link, image, description_small, inde
                     transition: "transform 0.08s linear",
                     willChange: "transform",
                 }}
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-                data-aos-duration="700"
             >   
                 <div className="card-home-tite">{title}</div>
             <div>

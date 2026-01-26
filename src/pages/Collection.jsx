@@ -1,13 +1,13 @@
 // import { Explosion } from "./Explosion";
 import { Collectioncards } from "./Collection-cards";
-import cheat_sheet from "/cheat_sheet.jpg";
-import coder from "/coder.png";
-import resume1 from "/resume1.png";
-import book_stack from "/book_stack.png";
-import template from "/template.png";
-import visual_guide from "/visual_guide.png";
-import clock from "/clock.png";
-import checklist from "/checklist.png";
+import cheat_sheet from "/col-1.png";
+import coder from "/col-2.png";
+import resume1 from "/col-3.png";
+import book_stack from "/col-4.png";
+import template from "/col-5.png";
+import visual_guide from "/col-6.png";
+import clock from "/col-7.png";
+import checklist from "/col-8.png";
 
 const cards_details = [
     {

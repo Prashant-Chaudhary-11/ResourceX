@@ -27,7 +27,15 @@ export const Blog = () => {
             role: "Career & Placement",
             date: "10 January, 2026",
             image: Blog_3
-        }
+        },
+        {
+            tag: "Productivity",
+            title: "Top 10 Templates to Boost Your Productivity in 2026",
+            author: "Product Team",
+            role: "Product & Research",
+            date: "10 January, 2026",
+            image: Blog_1
+        },
     ];
 
     return (
@@ -41,10 +49,7 @@ export const Blog = () => {
             {/* Cards */}
             <div className="row">
                 {blogs.map((blog, index) => (
-                    <div className="col-6 col-md-4 mb-4" key={index}
-                        data-aos="fade-up"
-                        data-aos-delay={index * 120}
-                        data-aos-duration="800"
+                    <div className="col-6 col-md-3 mb-4" key={index}
                     >
                         <div className="blog-card shadow-sm rounded-5 h-100">
                             

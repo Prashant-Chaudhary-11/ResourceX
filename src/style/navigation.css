@@ -1,3 +1,4 @@
+/* Logo */
 .logo {
   font-weight: 700;
   display: flex;
@@ -37,7 +38,6 @@
   animation: drawRight 11s infinite ease-in-out;
 }
 
-/* Left \ line */
 @keyframes drawLeft {
   0% {
     height: 25px;
@@ -47,7 +47,6 @@
     height: 25px;
   }
 
-  /* animation starts */
   91% {
     height: 0;
   }
@@ -57,7 +56,6 @@
   }
 }
 
-/* Right / line */
 @keyframes drawRight {
   0% {
     height: 25px;
@@ -76,6 +74,63 @@
   }
 }
 
+/* Header Layout */
+.header {
+  padding-left: 100px;
+  padding-right: 100px;
+  /* position: relative; */
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Sticky + Glossy Header */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 9998;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#root {
+  height: 100vh;
+  overflow: auto;
+}
+
+/* .parent { transform: translateZ(0); }                  or */
+/* .parent { overflow: hidden; } */
+
+/* Optional: nicer glossy shine */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.15));
+}
+
+/* Ensure header content stays above the glossy overlay */
+.header>* {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Desktop Nav */
+.desktop-nav {
+  display: flex;
+}
+
 .header_navigation a {
   color: var(--primary-color);
   text-decoration: none;
@@ -89,29 +144,11 @@
   color: var(--secondary-color);
 }
 
-.header {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-/* keep your existing styles, add these */
-
-.header {
-  padding-left: 100px;
-  padding-right: 100px;
-  position: relative;
-}
-
-/* Desktop defaults */
-.desktop-nav {
-  display: flex;
-}
-
 .desktop-cta {
   display: inline-flex;
 }
 
-/* Hamburger */
+/* Hamburger (only visible on mobile) */
 .hamburger {
   display: none;
   width: 44px;
@@ -123,147 +160,17 @@
   border-radius: 10px;
 }
 
-.hamburger span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: var(--primary-color);
-  margin: 6px 0;
-  transition: transform 0.3s ease, opacity 0.2s ease;
-}
-
-/* Hamburger -> X */
-.hamburger.open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Mobile Menu Container */
-.mobile-menu {
-  display: none;
-  /* desktop hidden */
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .header {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .desktop-cta {
-    display: none;
-  }
-
-  .hamburger {
-    display: inline-flex;
-  }
-
-  .mobile-menu {
-    display: block;
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 9999;
-  }
-
-  .mobile-menu.open {
-    pointer-events: auto;
-  }
-
-  .mobile-backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.35s ease;
-  }
-
-  .mobile-menu.open .mobile-backdrop {
-    background: rgba(0, 0, 0, 0.35);
-  }
-
-  /* Slide-down panel */
-  .mobile-panel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    padding: 16px;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
-    transform: translateY(-110%);
-    transition: transform 0.35s ease;
-  }
-
-  .mobile-menu.open .mobile-panel {
-    transform: translateY(0);
-  }
-
-  .mobile-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 0 14px;
-  }
-
-  .mobile-nav a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px 8px;
-    border-radius: 10px;
-    transition: background 0.25s ease, color 0.25s ease;
-  }
-
-  .mobile-nav a:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--secondary-color);
-  }
-
-  .mobile-cta {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .desktop-cta {
-    display: none !important;
-    /* hide Get Started */
-  }
-
-  .hamburger {
-    display: flex !important;
-    /* show 3-line menu */
-  }
-
-  .desktop-nav {
-    display: none !important;
-    /* optional: hide desktop nav on mobile */
-  }
-}
 /* Mobile sheet (Freshworks-like) */
 .mobile-sheet {
   display: none;
 }
 
 @media (max-width: 992px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .desktop-nav,
   .desktop-cta {
     display: none !important;
@@ -271,36 +178,34 @@
 
   .hamburger {
     display: inline-flex !important;
-    border: 0;
-    background: transparent;
-    width: 44px;
-    height: 44px;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
   }
 
   .mobile-sheet {
-    display: block;
+    /* display: block; */
     position: fixed;
     inset: 0;
     z-index: 9999;
     pointer-events: none;
+    height: 100vh;
   }
 
   .mobile-sheet.open {
     pointer-events: auto;
+    display: block;
   }
 
   .mobile-sheet-backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     transition: background 0.25s ease;
   }
 
   .mobile-sheet.open .mobile-sheet-backdrop {
-    background: rgba(0,0,0,0.35);
+    background: rgba(0, 0, 0, 0.35);
   }
 
   /* FULL SCREEN PANEL */
@@ -325,7 +230,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 
   .mobile-sheet-brand {
@@ -377,14 +282,14 @@
     font-size: 18px;
     font-weight: 600;
     color: #111;
-    border-bottom: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     cursor: pointer;
   }
 
   .chev {
     transition: transform 0.2s ease;
     font-size: 18px;
-    color: rgba(0,0,0,0.6);
+    color: rgba(0, 0, 0, 0.6);
   }
 
   .chev.up {
@@ -405,15 +310,20 @@
     display: block;
     padding: 12px 0;
     text-decoration: none;
-    color: rgba(0,0,0,0.75);
+    color: rgba(0, 0, 0, 0.75);
     font-weight: 500;
   }
 
-  .mobile-links {
+  /* .mobile-links {
     padding: 14px 0 6px;
-  }
+  } */
 
-  .mobile-links a {
+  .header-links {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     display: block;
     padding: 12px 0;
     text-decoration: none;
@@ -423,10 +333,45 @@
 
   .mobile-cta {
     margin-top: 14px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: center;
   }
+
+  .mobile-social {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .social-pill {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s ease, background 0.15s ease, border 0.15s ease;
+  }
+
+  .social-pill:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .social-pill:active {
+    transform: translateY(0px) scale(0.98);
+  }
+
 }
