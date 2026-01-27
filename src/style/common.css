@@ -77,6 +77,10 @@ body{
     border: none;
 }
 
+.primary-button a{
+    color: var(--primary-light-color);
+    text-decoration: none;
+}
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);

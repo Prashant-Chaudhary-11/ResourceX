@@ -1,4 +1,5 @@
-import Hero_img from "/Hero.png";
+import { Link } from "react-router-dom";
+import Hero_img from "/hero.png";
 
 export const Hero = () => {
     return (
@@ -17,7 +18,7 @@ export const Hero = () => {
                         <li className="d-flex align-items-center gap-1 mb-2"><img width="20" height="20" src="https://img.icons8.com/glyph-neue/64/checked.png" alt="checked"/> Ready templates for resumes, projects, and productivity</li>
                     </ul>
                     <div className="mt-3">
-                    <button className="primary-button">Discover the library</button>
+                    <button className="primary-button"><Link to="/product">Discover the library</Link></button>
                     </div>
                 </div>
             </div>

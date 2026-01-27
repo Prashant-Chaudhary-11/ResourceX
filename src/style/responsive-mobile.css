@@ -1,6 +1,6 @@
 /* mobile media query */
 @media (max-width: 768px) {
-    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section, .about-container, .about-page, .contact-container, .legal-hero, .legal-body {
+    .welcome-section, .blog-section, .hero-section, .feature-section, .pre-home-section, .pixis-section, .about-container, .about-page, .contact-container, .legal-hero, .legal-body, .product-container {
         padding: 50px 10px!important;
     }
 
@@ -27,7 +27,7 @@
     }
 
     .collection-cards-wrapper {
-        height: 21rem;
+        height: 22rem;
     }
     .collection-card-image{
         height: 8rem;
@@ -190,5 +190,101 @@
         font-size: 12px!important;
         padding: 6px 10px!important;
         height: 40px!important;
+    }
+    .filter-bar, .select-column{
+        flex-direction: column!important;
+    }
+    .filter-search{
+        width: 100%!important;
+        margin-bottom: 20px;
+    }
+    .product-select{
+        margin-bottom: 20px;
+        font-size: 12px!important;
+        margin-right: 6px!important;
+    }
+    .product-hero .faq-hero{
+        min-height: 200px!important;
+        height: 270px!important;
+    }
+    .product-container{
+        padding: 10px!important;
+    }
+    .featured-title, .card-title{
+        font-size: 14px!important;
+    }
+    .featured-desc, .card-desc{
+        font-size: 12px!important;
+    }
+    .pill, .tag, .type-chip, .price-chip, .blog-card-category{
+        font-size: 8px!important;
+        padding: 4px 8px!important;
+    }
+    .featured-price, .card-price{
+        font-size: 16px!important;
+    }
+    .featured-meta span, .card-meta span{
+        font-size: 12px!important;
+    }
+    .download-text{
+        display: none!important;
+    }
+    .count{
+        font-size: 10px!important;
+    }
+    .upper-search-product{
+        display: flex!important;
+    }
+    .lower-search-product{
+        display: none!important;
+    }
+    .details-grid{
+        grid-template-columns: 1fr!important;
+    }
+    .details-card{
+        padding: 12px!important;
+    }
+    .details-card h3{
+        font-size: 14px!important;
+    }
+    .details-card ul li{
+        font-size: 11px!important;
+    }
+    .details-card ul li img{
+        width: 15px!important;
+        height: 15px!important;
+    }
+    .details-actions{
+        margin-bottom: 0px!important;
+    }
+    .primary-action, .secondary-action{
+        font-size: 10px!important;
+        height: 30px!important;
+        padding: 4px 10px!important;
+    }
+    .blog-detail-content{
+        max-width: 100%!important;
+    }
+    .blog-card-title{
+        font-size: 12px!important;
+    }
+    .blog-card-content{
+        padding: 12px!important;
+    }
+    .blog-card-excerpt{
+        font-size: 10px!important;
+    }
+    .blog-card-author span, .blog-card-date span{
+        font-size: 8px!important;
+    }
+    .blog-card-footer{
+        padding-top: 8px!important;
+        margin-top: 5px!important;
+    }
+    .blog-grid{
+        gap: 5px!important;
+    }
+    .blog-subtitle{
+        font-size: 14px!important;
     }
 }

@@ -3,9 +3,14 @@
   font-weight: 700;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: var(--primary-color);;
   gap: 4px;
 }
 
+.header a{
+  text-decoration: none;
+}
 .logo-x {
   position: relative;
   width: 18px;

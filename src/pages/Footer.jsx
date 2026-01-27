@@ -43,7 +43,8 @@ export const Footer = () => {
           <div className="col-md-3 col-6 mb-4">
             <h5>Links</h5>
             <ul>
-              <li><Link to="/resources">Resources</Link></li>
+              <li><Link to="/study-notes">Study Notes</Link></li>
+              <li><Link to="/cheat-sheets">Cheat Sheets</Link></li>
               <li><Link to="/collections">Collections</Link></li>
               <li><Link to="/templates">Templates</Link></li>
               <li><Link to="/blog">Blog</Link></li>

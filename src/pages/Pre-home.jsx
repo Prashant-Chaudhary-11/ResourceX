@@ -1,4 +1,6 @@
 import ShinyText from "./ShinyText";
+import { Link } from "react-router-dom";
+
 export const PreHome = () => {
     return (
         <div className="pre-home-section position-relative">
@@ -23,7 +25,7 @@ export const PreHome = () => {
                         professionals learn faster and work smarter.
                     </p>
                     <div>
-                    <button className="primary-button d-flex align-items-center justify-content-center gap-2 mt-4"><img width="24" className="invert-img" height="24" src="https://img.icons8.com/ios/50/rocket--v1.png" alt="rocket--v1"/> Explore Now</button>
+                    <button className="primary-button d-flex align-items-center justify-content-center gap-2 mt-4"><img width="24" className="invert-img" height="24" src="https://img.icons8.com/ios/50/rocket--v1.png" alt="rocket--v1"/><Link to="/product">Explore Now</Link></button>
                     </div>
                     <div className="d-flex align-items-center mt-4">
                         <div className="position-relative width-135 height-50">

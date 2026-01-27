@@ -72,9 +72,9 @@ export const Welcome = () => {
                 {/* <Explosion explosion_clsss="home-hero-heading__explosions" /> */}
 
                 <p className="sub-heading">
-  Explore a growing ecosystem of learning resources, tools, and collections 
-  designed to support your study journey and skill development.
-</p>
+                    Explore a growing ecosystem of learning resources, tools, and collections
+                    designed to support your study journey and skill development.
+                </p>
 
             </div>
 

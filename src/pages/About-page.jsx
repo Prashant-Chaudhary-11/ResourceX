@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ShinyText from "./ShinyText";
+import { ScrollToTop } from "./ScrollToTop";
 export const About = () => {
   const stats = [
     { label: "Resources", value: "500+" },
@@ -52,6 +53,7 @@ export const About = () => {
   return (
     <>
       <main className="about-page">
+        <ScrollToTop />
         {/* HERO */}
         <div className="my-3">
           <div className="text-center"><Link to="/" className="about-link">Home</Link> / About Us</div>

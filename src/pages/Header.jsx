@@ -30,13 +30,13 @@ export const Header = () => {
 
   return (
     <header className="header d-flex justify-content-between align-items-center py-3">
-      <h2 className="logo">
+      <Link to="/"><h2 className="logo">
         Resource
         <span className="logo-x">
           <span className="line line-left"></span>
           <span className="line line-right"></span>
         </span>
-      </h2>
+      </h2></Link>
 
       {/* Desktop Nav */}
       {/* Desktop Nav */}
@@ -49,8 +49,8 @@ export const Header = () => {
             Product <span className="nav-dd-caret">▾</span>
           </button>
           <div className="nav-dd-menu">
-            <Link to="/resources">Study Notes</Link>
-            <Link to="/resources">Cheat Sheets</Link>
+            <Link to="/study-notes">Study Notes</Link>
+            <Link to="/cheat-sheets">Cheat Sheets</Link>
             <Link to="/collections">Collections</Link>
             <Link to="/templates">Templates</Link>
           </div>
@@ -94,7 +94,7 @@ export const Header = () => {
             src="https://img.icons8.com/doodle/48/circled-play--v1.png"
             alt="rocket"
           />
-          Get Started
+          <Link to="/product">Get Started</Link>
         </button>
 
         {/* Hamburger (mobile only via CSS) */}
@@ -137,8 +137,8 @@ export const Header = () => {
               <span className={`chev ${openSection === "products" ? "up" : ""}`}><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1" /></span>
             </button>
             <div className={`mobile-acc-panel ${openSection === "products" ? "open" : ""}`}>
-              <Link to="/resources" onClick={closeMenu}>Study Notes</Link>
-              <Link to="/resources" onClick={closeMenu}>Cheat Sheets</Link>
+              <Link to="/study-notes" onClick={closeMenu}>Study Notes</Link>
+              <Link to="/cheat-sheets" onClick={closeMenu}>Cheat Sheets</Link>
               <Link to="/collections" onClick={closeMenu}>Collections</Link>
               <Link to="/templates" onClick={closeMenu}>Templates</Link>
             </div>
@@ -179,7 +179,7 @@ export const Header = () => {
                   src="https://img.icons8.com/doodle/48/circled-play--v1.png"
                   alt="rocket"
                 />
-                Get Started
+                <Link to="/product">Get Started</Link>
               </button>
             </div>
 

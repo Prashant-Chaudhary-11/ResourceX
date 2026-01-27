@@ -515,6 +515,10 @@
 .blog-card:hover {
   transform: translateY(-6px);
 }
+.blog-col-card a{
+  text-decoration: none;
+}
+
 
 .blog-tag {
   background: #0f3d3e;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Blog_1 from "/blog_1.png";
 import Blog_2 from "/blog_2.png";
 import Blog_3 from "/blog_3.png";
@@ -43,34 +44,36 @@ export const Blog = () => {
             {/* Header */}
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <h1>Go further</h1>
-                <button className="primary-button">Visit the blog</button>
+                <button className="primary-button"><Link to="/blog">Visit the blog</Link></button>
             </div>
 
             {/* Cards */}
             <div className="row">
                 {blogs.map((blog, index) => (
-                    <div className="col-6 col-md-3 mb-4" key={index}
+                    <div className="col-6 blog-col-card col-md-3 mb-4" key={index}
                     >
-                        <div className="blog-card shadow-sm rounded-5 h-100">
-                            
-                            <img 
-                                src={blog.image} 
-                                alt={blog.title} 
-                                className="w-100 rounded-top-4 mb-3 blog-image"
-                            />
-                            <div className="blog-content">
-                                <span className="blog-tag">{blog.tag}</span>
+                        <Link to="/blog">
+                            <div className="blog-card shadow-sm rounded-5 h-100">
+                                
+                                <img 
+                                    src={blog.image} 
+                                    alt={blog.title} 
+                                    className="w-100 rounded-top-4 mb-3 blog-image"
+                                />
+                                <div className="blog-content">
+                                    <span className="blog-tag">{blog.tag}</span>
 
-                                <h3 className="mt-3 blog-heading">{blog.title}</h3>
+                                    <h3 className="mt-3 blog-heading">{blog.title}</h3>
 
-                                <div className="blog-meta mt-3">
-                                    <strong className="blog-author">By {blog.author}</strong>
-                                    <p className="mb-3 blog-role">{blog.role}</p>
-                                    <small className="blog-date">{blog.date}</small>
+                                    <div className="blog-meta mt-3">
+                                        <strong className="blog-author">By {blog.author}</strong>
+                                        <p className="mb-3 blog-role">{blog.role}</p>
+                                        <small className="blog-date">{blog.date}</small>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>
