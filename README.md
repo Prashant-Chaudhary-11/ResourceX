@@ -1,17 +1,101 @@
-# React + Vite
+# ResourceX 🚀  
+**Discover smarter ways to learn**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ResourceX is a modern learning resource platform designed to help students, developers, and lifelong learners discover high-quality study materials, cheat sheets, templates, and curated learning collections — all in one place.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** https://resourcex.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ What is ResourceX?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ResourceX is not just a notes website — it’s a **learning ecosystem**.  
+The goal is to make learning resources easier to discover, faster to use, and more enjoyable to explore.
 
-## Expanding the ESLint configuration
+Instead of scattered content, ResourceX brings together:
+- curated learning materials  
+- clean, distraction-free UI  
+- smooth animations and interactions  
+- a scalable foundation for future EdTech features  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ResourceX
+---
+
+## 🔍 Platform Vision
+
+ResourceX focuses on:
+- **Discovery-first learning** – explore resources instead of searching endlessly  
+- **Clarity over clutter** – clean UI, clear content structure  
+- **Consistency** – helping learners stay on track  
+- **Scalability** – future-ready for AI, quizzes, gamification, and personalization  
+
+---
+
+## 🧩 Resource Categories
+
+- **Cheat Sheets** – quick revision and reference material  
+- **Study Notes** – structured, easy-to-understand notes  
+- **Learning Collections** – topic-based curated bundles  
+- **Templates & Tools** – resumes, projects, and productivity templates  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js  
+- **Styling:** CSS / Bootstrap utilities  
+- **Animations:** AOS (Animate On Scroll)  
+- **UI Effects:** Custom animations & ShinyText  
+- **Hosting:** Netlify  
+
+---
+
+## 📌 Key Highlights
+
+- Responsive design (desktop & mobile)
+- Sticky glossy header with mobile-friendly navigation
+- Smooth animations and modern UI patterns
+- Component-based architecture
+- Easy to extend and scale
+
+---
+
+## 🚧 Work in Progress
+
+This project is actively evolving. Planned improvements include:
+- Dedicated product pages
+- Search & filters
+- User accounts
+- Interactive quizzes & flashcards
+- Gamification (XP, streaks)
+- AI-assisted learning tools
+
+---
+
+## 🤝 Contributing
+
+Contributions, ideas, and feedback are welcome!
+
+If you’d like to:
+- improve UI/UX  
+- add new components  
+- suggest features  
+
+Feel free to open an issue or submit a pull request.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 👤 Author
+
+**Prashant Chaudhary**  
+Full-stack Developer | EdTech Builder  
+📍 India  
+
+---
+
+> _“Learning should be simple, accessible, and engaging — ResourceX is a step toward that.”_
