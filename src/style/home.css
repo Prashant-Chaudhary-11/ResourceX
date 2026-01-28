@@ -502,7 +502,7 @@
   font-size: 50px;
 }
 
-.blog-section, .hero-section, .feature-section, .pixis-section {
+.blog-section, .hero-section, .feature-section, .pixis-section, .blog-section-container {
   padding: 100px;
 }
 
