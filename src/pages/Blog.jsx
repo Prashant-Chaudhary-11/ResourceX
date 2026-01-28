@@ -40,7 +40,7 @@ export const Blog = () => {
     ];
 
     return (
-        <div className="blog-section blog-section-container">
+        <div className="pt-0 blog-section-container">
             {/* Header */}
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <h1>Go further</h1>
